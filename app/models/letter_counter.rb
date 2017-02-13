@@ -8,7 +8,7 @@ class LetterCounter
   attr_reader :matcher, :string
 
   def accumulator
-    matcher.upcase.chars.map do |char|
+    @accumulator ||= matcher.upcase.chars.map do |char|
       Array.new([char, 0])
     end
   end
