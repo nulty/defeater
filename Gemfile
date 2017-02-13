@@ -5,9 +5,12 @@ gem 'rails', '4.1.8'
 
 gem 'rails-api'
 
+
 # gem 'spring', :group => :development
 
-
+group :development do
+  gem "rspec-rails"
+end
 
 
 # To use ActiveModel has_secure_password
